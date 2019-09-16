@@ -1,0 +1,29 @@
+ Um IP(no padrão IPv4) é composto por 4 octetos, ou seja quatro sequencias de 8 bits cada, essas compostas por binários (0ou1) que tbm pode ser representada por números decimais. 
+
+ex.:
+
+192.168.0.0
+é igual
+11000000.10101000.00000000.00000000
+
+representadas em binario e em decimal.
+
+é possível com 1 octeto representar do numeral 0 até 255 
+
+
+======================================
+Ip 10.10.0.1
+00001010.00001010.00000000.00000001
+======================================
+
+##Descobrindo IP da rede 
+
+======================================
+
+
+##Cálculando Máscadas de rede 
+
+======================================
+
+
+

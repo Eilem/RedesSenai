@@ -1,0 +1,21 @@
+sequências de 0(zero) e/ou 1(um)
+
+8 bits =  1 Byte
+
+Binário base 2 
+
+Tabela 
+
+-------------------------
+correspondência em decimal da sequencia de binário 8 bits
+
+128-64-32-16-8-4-2-1
+
+-------------------------
+
+exemplos:
+para o número 192 teremos a representação em 11000000
+
+para o número 5 teremos a representação em 00000101
+
+----------------------
