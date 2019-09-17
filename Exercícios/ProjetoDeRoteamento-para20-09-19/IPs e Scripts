@@ -1,0 +1,51 @@
+#Rede 1 
+
+Ip da rede 192.1.168.0/27
+Máscara 255.255.255.224
+Quantidade de Ips válidos 256
+Quantidade de hosts 254
+IP do PC 192.168.1.10
+IP do Servidor 192.168.1.5
+IP Router 192.168.1.1
+Switch 192.168.1.254
+Broadcast 192.168.1.255
+--------------------------------
+
+#Rede 2
+
+Ip da rede 10.40.16.0/20
+Máscara 255.255.240.0
+Quantidade de Ips válidos 4.096‬
+Quantidade de hosts 4.094
+IP do PC 10.40.16.10
+IP do Servidor 10.40.16.5
+IP Router 10.40.16.1
+Switch 10.40.16.254
+Broadcast 10.40.16.255
+--------------------------------
+
+#Rede 3
+
+Ip da rede 192.168.0.0/25
+Máscara 255.255.255.192
+Quantidade de Ips válidos 64
+Quantidade de hosts 62
+IP do PC 192.168.0.10
+IP do Servidor 192.168.0.5
+IP Router 192.168.0.1
+Switch 192.168.0.63
+Broadcast 192.168.0.64
+--------------------------------
+
+Rede 4
+
+Ip da 172.16.42.0/23
+Máscara 255.255.254.0
+Quantidade de Ips válidos  512
+Quantidade de hosts 510
+IP do PC 172.16.42.10
+IP do Servidor 172.16.42.5
+IP Router 172.16.42.1
+Switch 172.16.42.0
+Broadcast 
+--------------------------------
