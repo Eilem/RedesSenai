@@ -1,0 +1,25 @@
+#RT-01
+
+enable
+Router# configure terminal
+Router(config)# banner motd "Acesso ao RT-01 somente para autorizados"
+Router(config)# do show running-config
+
+#adicionando senha da enable
+Router(config)# enable secret SenhadaEnable
+Router(config)# exit
+Router# exit
+
+Router> enable
+Password SenhadaEnable
+Router# configure terminal
+Router# line console 0
+Router# password SenhadaConsole
+
+Router(config)# username administrador privilege 15 secret SenhaAdmin
+
+
+
+
+
+
