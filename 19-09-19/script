@@ -1,0 +1,26 @@
+enable
+configure terminal
+
+#Esse comando deve ser configurado para permitir que o roteador encaminhe pacotes IPv6. 
+R1(config)# ipv6 unicast-routing
+
+R1(config)# interface g0/0
+R1(config-if)# ipv6 address 2001:DB8:1:1::1/64
+R1(config-if)# ipv6 address FE80::1 link-local
+R1(config-if)# no shutdown
+
+
+R1(config)# interface g0/1
+R1(config-if)# ipv6 address 2001:DB8:1:2::1/64
+R1(config-if)# ipv6 address FE80::1 link-local
+R1(config-if)# no shutdown
+
+
+R1(config)# interface serial 0/0/0
+R1(config-if)# ipv6 address 2001:DB8:1:A001::2/64
+R1(config-if)# ipv6 address FE80::1 link-local
+R1(config-if)# no shutdown
+
+
+#listar ips configurados
+R1(config)# do sh ipv6 int brie
