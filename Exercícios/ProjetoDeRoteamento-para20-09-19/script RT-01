@@ -17,6 +17,13 @@ Router# line console 0
 Router# password SenhadaConsole
 
 Router(config)# username administrador privilege 15 secret SenhaAdmin
+Router(config)#username estagiario privilege 1 secret SenhaEst
+
+
+
+
+
+
 
 
 
