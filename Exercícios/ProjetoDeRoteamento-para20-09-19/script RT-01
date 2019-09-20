@@ -10,14 +10,40 @@ Router(config)# enable secret SenhadaEnable
 Router(config)# exit
 Router# exit
 
-Router> enable
-Password SenhadaEnable
+
+#adicionando senha da console
 Router# configure terminal
 Router# line console 0
 Router# password SenhadaConsole
 
+#criptografia das senhas
+Router(config)# service password-encryption
+
+Router(config)# ip domain-name rede1.local
+Router(config)# crypto key generate rsa general-key modulus 1024
+
+#criação de usuários
 Router(config)# username administrador privilege 15 secret SenhaAdmin
 Router(config)#username estagiario privilege 1 secret SenhaEst
+
+#definição do tamanho da senha 
+Router(config)# security passwords min-length 8
+
+#configuração de bloqueio de usuário 
+Router(config)# login block-for 180 attempts 3 within 60
+
+#conexao ssh na vty
+Router(config)# line vty 0 4 
+Router(config)# login local 
+Router(config)# transport input ssh
+#tempo máximo da conexão ssh
+Router(config)# exec-timeout 5
+Router(config)# exit
+
+
+
+
+
 
 
 
