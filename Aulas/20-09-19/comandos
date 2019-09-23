@@ -1,0 +1,34 @@
+#Comando do switch /router
+
+###Copia a startup-config para um servidor tftp
+  copy startup-config tftp:
+  
+###Copia a running-config para um servidor tftp
+  copy running-config tftp:
+  
+#############################################################  
+
+##Cadastrar usuario e senha do ftp
+  (config) ip ftp username <Nome user>
+  (config) ip ftp password <Senha>
+    
+    
+#############################################################
+
+ #Comandos PC/Servidor
+ ###conecta em um servidor FTP ou TFTP
+    ftp <IP de destino>
+        
+#############################################################
+
+#Comandos do Server FTP/TFTP
+ 
+ ###baixa o arquivo do servidor FTP / TFTP para C:
+    ftp <IP de destino>
+    
+ ###conecta em um servidor FTP ou TFTP
+    ftp <IP de destino>
+    
+  
+  
+ 
