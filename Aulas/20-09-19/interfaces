@@ -1,0 +1,34 @@
+enable
+configure terminal
+hostname RT-01
+
+
+#ativar interface 
+interface g0/1
+no shutdown
+
+#criar subinterface 
+interface g0/1.10 
+##definir q sub é da interface 1
+encapsulation dotlq 10
+ip address 192.168.0.1 255.255.255.224
+descriptiuon GATWAY VLAN 10
+#não necessário no shutdown pq já deu na interface 
+
+
+## outra subinterface 
+interface g0/1.20
+encapsulation dotlq 20
+ip address 192.168.0.33 255.255.255.224
+descriptiuon GATWAY VLAN 20
+
+#outra
+interface g0/1.100
+encapsulation dotlq 100
+ip address 192.168.0.65 255.255.255.224
+descriptiuon GATWAY VLAN 100
+
+#gravar
+do wr 
+
+
