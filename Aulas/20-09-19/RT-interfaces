@@ -12,7 +12,7 @@ interface g0/1.10
 ##definir q sub é da interface 1
 encapsulation dotlq 10
 ip address 192.168.0.1 255.255.255.224
-descriptiuon GATWAY VLAN 10
+descriptiuon GATEWAY VLAN 10
 #não necessário no shutdown pq já deu na interface 
 
 
@@ -20,13 +20,13 @@ descriptiuon GATWAY VLAN 10
 interface g0/1.20
 encapsulation dotlq 20
 ip address 192.168.0.33 255.255.255.224
-descriptiuon GATWAY VLAN 20
+descriptiuon GATEWAY VLAN 20
 
 #outra
 interface g0/1.100
 encapsulation dotlq 100
 ip address 192.168.0.65 255.255.255.224
-descriptiuon GATWAY VLAN 100
+descriptiuon GATEWAY VLAN 100
 
 #gravar
 do wr 
