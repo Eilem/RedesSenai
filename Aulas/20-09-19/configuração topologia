@@ -41,17 +41,20 @@ exit
 interface fastEthernet 0/1
 description VLAN 10
 switchport mode access
-switchport acess vlan 10
+switchport access vlan 10
+exit
 
 interface fastEthernet 0/2
 description VLAN 20
 switchport mode access
-switchport acess vlan 20
+switchport access vlan 20
+exit
 
 interface fastEthernet 0/24
 description VLAN 100
 switchport mode access
-switchport acess vlan 100
+switchport access vlan 100
+exit
 
 ##################### trunk ( coneção do switch com router) 
 interface gigabitEthernet 0/1
