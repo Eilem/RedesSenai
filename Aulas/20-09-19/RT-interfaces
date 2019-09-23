@@ -49,5 +49,8 @@ ip helper-address 192.168.0.69
 
 ###########################
 ## colocar ip nas interfaces onde seus equipamentos de gerenciamento estão 
+#NO SW
 #interface vlan 100
-ip no switch 
+ip address 192.168.0.94 255.255.255.224
+
+
