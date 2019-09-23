@@ -32,3 +32,16 @@ descriptiuon GATWAY VLAN 100
 do wr 
 
 
+
+###################################
+#ensinando ao router quem é o responsavel pelo DHCP
+#ao solicitar um broadcast de um DHCP solicitar ao servidor 
+
+#vlan 10
+interface g0/1.10
+ip helper-address 192.168.0.69
+
+
+#vlan 20
+interface g0/1.20
+ip helper-address 192.168.0.69
