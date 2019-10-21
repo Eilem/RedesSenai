@@ -1,0 +1,39 @@
+ATIVIDADE PARA O LAR
+
+PROJETO DE ROTEAMENTO E SERVIÇOS DE REDE
+
+1. Deve-se configurar as redes seguindo as informações contidas no arquivo TABELA DE ENDEREÇAMENTO.xlsx
+
+2. Nos ROUTERS e SWITCHES devem estar configurados as seguintes
+
+opções:
+
+3.1 Banner
+
+3.2 Senha de Enable: SenhadaEnable
+
+3.3 Senha de Console: SenhadaConsole
+
+3.4 Usuários:
+
+Deve-se criar um usuário para cada membro do grupo com
+
+privilégio 15;
+
+3.5 Conexão via SSH em todas as VTY (com usuários locais)
+
+3.6 Tamanho máximo de inatividade: 5 minutos
+
+3.7 Encriptação de todas as senhas de texto plano
+
+3.8 Descrição de todas as portas em que foram configurados os IPs
+
+3. Apenas nos SWITCHES:
+
+4.1 Gateway padrão da rede
+
+5. Apenas nos ROUTERS:
+
+5.1 Senha com tamanho mínimo de 8 caracteres
+
+5.2 Bloquear o acesso do usuário durante 4 minutos caso um usuário digite a senha 7 vezes errado dentro de um período de 10 minuto
